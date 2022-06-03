@@ -1,0 +1,26 @@
+.Application-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(211, 238, 253);
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    button {
+        border: none;
+        border-bottom: 1px white solid;
+        outline: none;
+        border-radius: 2px;
+        background: none;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        transition: 0.2s;
+        font-size: 1rem;
+        &:hover {
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.105);
+            color: rgb(230, 230, 230);
+            border-bottom: 1px rgb(230, 230, 230) solid;
+        }
+    }
+}
