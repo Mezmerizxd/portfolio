@@ -62,7 +62,7 @@ const Home = () => {
                     project that I am working on as of 12/06/2022. This
                     project has 3 platforms that you can use it on, Desktop
                     - windows/linux/macos, Mobile - android/ios and Web
-                    Browsers. I am the Co-owner of this and have done all of
+                    Browsers. I am the CTO of this and have done all of
                     the backend code and pretty much all of the frontend
                     code too."
                     respository="https://github.com/Conversel"
