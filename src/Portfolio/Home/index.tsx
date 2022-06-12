@@ -1,78 +1,110 @@
+import React from 'react';
+import { Link } from 'react-scroll';
+
 // Styles
 import './styles.scss';
+
+// Components
+import Section from '../../components/Section';
+import Project from '../../components/Project';
 
 const Home = () => {
     return (
         <div className="Home">
-            <title>Home</title>
-            <div className="Container">
-                <div className="Header">
-                    <div id="overlay">
-                        <div className="Content">
-                            <h1>
-                                Hello! My Name is Rory, and Welcome to my
-                                Portfolio
-                            </h1>
-                        </div>
-                    </div>
-                </div>
-                <div className="Body">
-                    <div id="About_Me">
-                        <div className="Title">
-                            <h1>About Me</h1>
-                        </div>
-                        <div className="Content">
-                            <div className="Image">
-                                <img
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAM1BMVEXk5ueutLfn6eqrsbTp6+zg4uOwtrnJzc/j5earsbW0uby4vcDQ09XGyszU19jd3+G/xMamCvwDAAAFLklEQVR4nO2d2bLbIAxAbYE3sDH//7WFbPfexG4MiCAcnWmnrzkjIRaD2jQMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMw5wQkHJczewxZh2lhNK/CBOQo1n0JIT74/H/qMV0Z7GU3aCcVPuEE1XDCtVLAhgtpme7H0s1N1U7QjO0L8F7llzGeh1hEG/8Lo7TUmmuSrOfns9xnGXpXxsONPpA/B6OqqstjC6Ax/0ujkNdYQQbKNi2k64qiiEZ+ohi35X+2YcZw/WujmslYewiAliVYrxgJYrdwUmwXsU+RdApUi83oNIE27YvrfB/ZPg8+BJETXnqh9CVzBbTQHgojgiCvtqU9thFJg/CKz3VIMKMEkIXxIWqIpIg2SkjYj+xC816mrJae2aiWGykxRNsW0UwiJghJDljYI5CD8GRiCtIsJxizYUPQ2pzItZy5pcisTRdk/a9m4amtNNfBuQkdVhSaYqfpNTSFGfb9GRIakrE2Pm+GFLaCQPqiu0OpWP+HMPQQcgQMiQprWXNmsVwIjQjYi/ZrhAqNTCgr2gu0Jnz85RSSjso0HkMFZ0YZjKkc26a/jlmh9JiDyDxi9oeorTYAzZkwwoMz19pzj9bnH/GP/+qbchjSGflneWYhtTuKdMOmNKZcJ5TjInQKcYXnESd/jQxy0ENpULTNGOGgxpap/oyw9pbUAqhfx2Dbkhovvfgz4iUzoM9+GlK6/Mh4q29hyC1mwro30hpVVLPF9wYQr71RazOeM5/cw81iBRD+A03aM9/C/obbrKjbYSpCmIVG3qT/Q8oeUo3Rz0IL7vI1tEbCB9pSiu8I/aV8x3Kg/BGWrWp4ZVs0nZfmAoEG4h/61yHYIJiFSl6Q0Vk6tTW1N8kYp8hdOkfHYYMXd2Qft+8CYwqYDSKvqIh+MCF8Wgca2u/cwdgeW3TtuVn6+1oBs3yLo5C2JpK6CvQzGpfUkz9UG/87gCsi5o2LIXolxN0FbwAsjOLEr+YJmXn7iR6N0BCt5p5cMxm7eAsfS+/CACQf4CTpKjzgkvr2cVarVTf96372yut7XLJ1sa7lv6VcfgYrWaxqr3Wlo1S6pvStr22sxOtTNPLzdY3nj20bPP+ejFdJYkLsjGLdtPBEbe/mr2bQKiXWJDroA+vtzc0p9aahuwqHMDYrQEXHEw9jwQl3drMpts9JBU1SdktPe5FBRdJQ6bwXBpa57ib2A8kukQDzMjh++Uo7Fo6Wd02Pkf4fknqoo4HtvAIjsqUcjx6DIPgWCaOML9rKI/oqD9/lgNrn+eF+p7j8tnzHBiR7+kdUGw/+V1Kzkc75mMy6U+FMaxjPibiM1U1uGM+puInHpmALZCgP4pt7i840MV8+0R1zPsRB6UTcqpizncYwZ89syDydfyWCwXB1l8/zRNGWbTG/GHKUm9AkxHMc/EGSk3z2+ArEhPEV5TUBLEvUGFcjEUH80J/jveTGOAJEljJbILWGQT3zRYiwuKsUXN1EEJAzBhRJFll7mBUG7KD8EqPkKekBREaL8hMDZLQSG6AQjtHPYmvTQnX0TtpC1SYCe2YdkkyLP3jj5BSbKiuR585eQhTgoje6yIb0Yb0C+mV6EYvebqw5SDy2WmubogZiF2AVxPC2FpDf8H2Q9QWo6IkjUxTWVEI3WY/wrCeSuqJ+eRWzXR/JXwgVjUMozbCOfoEZiSiKVGepqv5CJ8RyR4D7xBeamqa7z3BJ/z17JxuBPdv93d/a2Ki878MMAzDMAzDMAzDMAzDMF/KP09VUmxBAiI3AAAAAElFTkSuQmCC"
-                                    alt=""
-                                />
-                            </div>
-                            <div className="Paragraph">
-                                <p>
-                                    I'm a efficient and industrious person
-                                    seeking employment and committed to
-                                    utilizing my skills to further the mission
-                                    of a company. I do have autism but I will
-                                    not let it stop me from working hard and
-                                    motivating me to do my best.
-                                    <button>View Resume</button>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="My_Projects">
-                        <div className="Title">
-                            <h1>My Projects</h1>
-                        </div>
-                        <div className="Project">
-                            <div className="Project-image">
-                                <img src="https://media.discordapp.net/attachments/974193475396436031/981898248476315698/unknown.png?width=728&height=461" />
-                            </div>
-                            <div className="Project-description">
-                                <h1>Conversel</h1>
-                                <p>
-                                    This is a online messaging platform that
-                                    allows you to connect with your friends and
-                                    join communitys with people around the
-                                    world. I made this with a small group of new
-                                    developers. I'm not very good at styling
-                                    things for the frontent so I mainly worked
-                                    on the backend and server managment stuff.
-                                    {
-                                        " (I'm pretty sure I made 98.99% of this website)"
-                                    }
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="Footer">
-                    <div className="Footer-content">
-                        <button>Github</button>
-                    </div>
+            <div className="Header" id="header">
+                <h1>Welcome to my Portolio!</h1>
+                <p>
+                    Scroll down to find out more about me. <br />
+                    My Email, Rorypearson2003@hotmail.com
+                </p>
+                <Link
+                    to="about_me"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                >
+                    <button>See More!</button>
+                </Link>
+            </div>
+            <div className="About" id="about_me">
+                <Section
+                    title="About Me"
+                    content="I'm a efficient and industrious person seeking
+                    employment and committed to utilizing my skills to
+                    further the mission of a company. I do have autism but I
+                    will not let it stop me from working hard and motivating
+                    me to do my best.
+                    I enjoy coding, It's really all I do in my free
+                    time. I love to create things and I love to learn new
+                    things that I can use in the future to create something
+                    bigger and better.
+                    My aim is to be an excellent software developer in a
+                    company that values my skills and can benefit from my
+                    experience in this field."
+                />
+            </div>
+            <div className="Skills" id="skills">
+                <Section
+                    title="Skills"
+                    content="I have very good Computer Skills and I am able to
+                    develope a wide range of applications across multiple
+                    platforms.
+                    My ability to learn fast and over come difficult
+                    problems is something that I am very proud of."
+                />
+            </div>
+            <div className="Projects" id="projects">
+                <h1 className="Title">My Projects</h1>
+                <Project
+                    title="Conversel"
+                    content="Conversel is a cross-platorm social app, this is my main
+                    project that I am working on as of 12/06/2022. This
+                    project has 3 platforms that you can use it on, Desktop
+                    - windows/linux/macos, Mobile - android/ios and Web
+                    Browsers. I am the Co-owner of this and have done all of
+                    the backend code and pretty much all of the frontend
+                    code too."
+                    respository="https://github.com/Conversel"
+                    isPrivate={true}
+                    website="https://conversel.com"
+                />
+                <Project
+                    title="Project Sicario"
+                    content="This Project introduced me into using frameworks like React and Vue. It was a addon to a Video Game called Grand Theft Auto V and it allowed you to heavily modify the Game."
+                    isPrivate={false}
+                    respository="https://github.com/mezmerizxd/redm-projectsicario"
+                />
+                <Project
+                    title="Connect"
+                    content="Using Xbox Live and the Xbox API, It allowed you to see your friendslist and Xbox partys inside a React App."
+                    isPrivate={true}
+                    respository="https://github.com/mezmerizxd/connect"
+                />
+                <Project
+                    title="iVritex"
+                    content="This project was something that wasn't easy to work on,
+                    I had to learn about reverse engineering and
+                    manipulating functions in a Video Game."
+                    respository="https://github.com/mezmerizxd/ivritex"
+                    isPrivate={false}
+                />
+                {/* <Project
+                    title="Purge Engine"
+                    content="Project Description"
+                    respository="https://github.com/mezmerizxd/PurgeEngine"
+                    isPrivate={true}
+                /> */}
+                <div className="Go-back">
+                    <Link
+                        to="header"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        <button>Back to Top</button>
+                    </Link>
                 </div>
             </div>
         </div>

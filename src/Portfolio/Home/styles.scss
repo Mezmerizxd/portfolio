@@ -1,185 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-
 .Home {
-    height: fit-content;
-    width: 100vw;
-    .Container {
+    width: 100%;
+    // height: 100vh;
+    overflow-x: hidden;
+    * {
+        transition: 0.15s;
+    }
+
+    .Header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95vw;
+        height: 100vh;
+        margin: 0 auto;
         h1 {
-            font-family: 'Montserrat', sans-serif;
-            color: white;
+            font-family: 'Oxygen', sans-serif;
+            text-align: center;
+            font-size: clamp(50px, 4vw, 22px);
+            font-weight: bold;
         }
         p {
-            font-family: 'Montserrat', sans-serif;
-            color: white;
-        }
-
-        .Header {
-            background: url('https://i.pinimg.com/originals/3d/cc/e4/3dcce4f29bbee91dbb021e91c7fd542a.jpg')
-                no-repeat center center;
-            #overlay {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-image: linear-gradient(135deg, #003f4a4e, #005a6954);
-                box-shadow: 0px 4px 4px 0px rgba(0, 149, 255, 0.375);
-                .Content {
-                    h1 {
-                        text-align: center;
-                        padding-block: 10px;
-                    }
-                    p {
-                        font-size: 1.5rem;
-                        font-weight: 400;
-                        color: rgb(0, 0, 0);
-                        text-align: center;
-                        padding-block: 10px;
-                    }
-                }
-            }
-        }
-
-        .Body {
-            #About_Me {
-                margin-block: 30px;
-                background-color: #02aab0;
-                background-image: linear-gradient(135deg, #0296b0, #00c5e8);
-                box-shadow: 0px 0px 4px 0px rgba(0, 149, 255, 0.375);
-                color: white;
-                padding-bottom: 20px;
-                .Title {
-                    text-align: center;
-                    padding: 20px;
-                }
-
-                .Content {
-                    .Paragraph {
-                        p {
-                            font-size: 1.2rem;
-                            display: flex;
-                            flex-direction: column;
-                            height: 100%;
-                            justify-content: center;
-
-                            button {
-                                margin-block: 10px;
-                                width: fit-content;
-                            }
-                        }
-                    }
-                }
-            }
-
-            #My_Projects {
-                margin-block: 30px;
-                padding: 20px;
-                background-color: #02aab0;
-                background-image: linear-gradient(135deg, #0296b0, #00c5e8);
-                box-shadow: 0px 0px 4px 0px rgba(0, 149, 255, 0.375);
-                .Title {
-                    h1 {
-                        text-align: center;
-                        padding-block: 20px;
-                        text-decoration: underline;
-                    }
-                }
-                .Project {
-                    width: 90vw;
-                    margin: auto;
-                    border-radius: 5px;
-                    display: flex;
-                    margin-block: 10px;
-                    .Project-image {
-                        border: 1px red solid;
-                        width: 40%;
-                        img {
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-
-                    .Project-description {
-                        width: 60%;
-                        padding: 20px;
-                    }
-                }
-            }
-        }
-
-        .Footer {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #02aab0;
-            background-image: linear-gradient(135deg, #0296b0, #00c5e8);
-            box-shadow: 0px 0px 4px 0px rgba(0, 149, 255, 0.375);
+            font-family: 'Kanit', sans-serif;
+            text-align: center;
+            font-size: 1.2em;
+            margin-block: 20px;
         }
     }
 
-    // Header
-    @media (min-width: 1250px) {
-        .Header {
-            #overlay {
-                height: 30rem;
-                .Content {
-                    width: 60%;
-                    h1 {
-                        font-size: 3rem;
-                        font-weight: 800;
-                    }
-                }
-            }
+    .Projects {
+        .Title {
+            font-family: 'Oxygen', sans-serif;
+            border-bottom: 7px rgb(77, 63, 128) solid;
+            font-size: clamp(50px, 4vw, 22px);
+            font-weight: bold;
+            width: fit-content;
+            margin: 0 auto;
+            margin-block: 20px;
+        }
+        .Go-back {
+            width: fit-content;
+            margin: 0 auto;
         }
     }
-    @media (max-width: 1250px) {
-        .Header {
-            #overlay {
-                height: 20rem;
-                .Content {
-                    width: 80%;
-                    h1 {
-                        font-size: 2rem;
-                        font-weight: 600;
-                    }
-                }
-            }
-        }
-    }
+}
 
-    // Body
-    @media (min-width: 1155px) {
-        .Body {
-            #About_Me {
-                .Content {
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 50%;
-                    margin: auto;
-                    .Image {
-                        width: 50%;
-                    }
-                    .Paragraph {
-                        width: 50%;
-                    }
-                }
-            }
-        }
+// Globals
+button {
+    font-family: 'Kanit', sans-serif;
+    color: rgb(220, 220, 220);
+    background-color: rgb(77, 63, 128);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-block: 10px;
+    padding: 10px;
+    font-size: 1em;
+    &:hover {
+        background-color: rgb(65, 48, 123);
+        color: rgb(255, 255, 255);
     }
-    @media (max-width: 1155px) {
-        .Body {
-            #About_Me {
-                .Content {
-                    width: 80%;
-                    margin: auto;
-                    .Image {
-                        img {
-                            width: 150px;
-                        }
-                    }
-                }
-            }
-        }
+    &:active {
+        background-color: rgb(75, 54, 142);
+        color: rgb(255, 255, 255);
     }
 }
