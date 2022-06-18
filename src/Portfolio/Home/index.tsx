@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div className="Home">
             <div className="Header" id="header">
-                <h1>Welcome to my Portolio!</h1>
+                <h1>Welcome to my Portfolio!</h1>
                 <p>
                     Scroll down to find out more about me. <br />
                     My Email, Rorypearson2003@hotmail.com
