@@ -2,6 +2,7 @@
     "name": "portfolio",
     "version": "1.0.0",
     "description": "my portfolio",
+    "homepage": "http://mezmerizxd.net/",
     "main": "index.js",
     "scripts": {
         "start": "react-scripts start",
