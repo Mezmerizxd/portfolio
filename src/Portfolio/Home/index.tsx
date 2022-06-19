@@ -48,7 +48,7 @@ const Home = () => {
                 <Section
                     title="Skills"
                     content="I have very good Computer Skills and I am able to
-                    develope a wide range of applications across multiple
+                    develop a wide range of applications across multiple
                     platforms.
                     My ability to learn fast and over come difficult
                     problems is something that I am very proud of."
@@ -58,7 +58,7 @@ const Home = () => {
                 <h1 className="Title">My Projects</h1>
                 <Project
                     title="Conversel"
-                    content="Conversel is a cross-platorm social app, this is my main
+                    content="Conversel is a cross-platform social app, this is my main
                     project that I am working on as of 12/06/2022. This
                     project has 3 platforms that you can use it on, Desktop
                     - windows/linux/macos, Mobile - android/ios and Web
@@ -77,7 +77,7 @@ const Home = () => {
                 />
                 <Project
                     title="Connect"
-                    content="Using Xbox Live and the Xbox API, It allowed you to see your friendslist and Xbox partys inside a React App."
+                    content="Using Xbox Live and the Xbox API, It allowed you to see your friends list and Xbox parties inside a React App."
                     isPrivate={true}
                     respository="https://github.com/mezmerizxd/connect"
                 />
