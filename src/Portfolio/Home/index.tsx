@@ -44,18 +44,18 @@ const Home = () => {
                     experience in this field."
                 />
             </div>
+            <div className="Skills" id="skills">
+                <Section
+                    title="Skills"
+                    content="I feel that I have a lot of skills and I am constantly learning new things. I have experience with the following technologies: Python, PHP, CSS, HTML, JavaScript, TypeScript, MongoDB, MySql, ExpressJs, ReactJs, Svelte, Git, GitHub and Linux. I also have experience with C# and C++ but I wouldn't say that I'm a C# or C++ expert. You can view most of my work on GitHub"
+                    linkName="GitHub"
+                    link="https://github.com/mezmerizxd"
+                />
+            </div>
             <div className="DeeperDive" id="deeper_dive">
                 <Section
                     title="Deeper Dive Into My Skills and Experience"
                     content="I want to be a Software Engineer and I have been learning since 2017 when I was 13 years old. I started out in Python using a module called Turtle to make small games. After I understood the basics I moved onto HTML & CSS and I was making simple sites for my friends on my schools computers. Then in 2020 I wanted to build a cheat for the game Grand Theft Auto V (because I didn't want to dedicate 20 years of my life earning money in a video game) so I started using C# to manipulate values inside the game and then I switched to someone's existing cheat base that was made in C++ and that's how I learned the basics of C# & C++. From 2021 to 2022 I've been learning how to use Web Frameworks like React & Svelte and also have built some servers using ExpressJs, MySql and MongoDB."
-                />
-            </div>
-            <div className="Skills" id="skills">
-                <Section
-                    title="Skills"
-                    content="I feel that I have a lot of skills and I am constantly learning new things. I have experience with the following technologies: Python, PHP, CSS, HTML, JavaScript, TypeScript, MongoDB, MySql, ExpressJs, ReactJs, Svelte, Git, Git and Linux. I also have experience with C# and C++ but I wouldn't say that I'm a C# or C++ expert. You can view most of my work on GitHub"
-                    linkName="GitHub"
-                    link="https://github.com/mezmerizxd"
                 />
             </div>
             <div className="Projects" id="projects">
