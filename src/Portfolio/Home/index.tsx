@@ -67,7 +67,6 @@ const Home = () => {
                     code too."
                     respository="https://github.com/Conversel"
                     isPrivate={true}
-                    website="https://conversel.com"
                 />
                 <Project
                     title="Project Sicario"
